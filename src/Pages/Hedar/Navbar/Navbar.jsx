@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="w-full fixed z-10 bg-opacity-30 px-6">
       <div className="max-w-[1320px] mx-auto">
-        <div className="px-6 lg:px-0 py-8 flex justify-between items-center relative">
+        <div className=" py-8 flex justify-between items-center relative">
           <div className="">
             <div className="flex items-center lg:gap-[60px]">
               {/* logo and title here */}
@@ -55,7 +55,7 @@ const Navbar = () => {
 
             <div
               onClick={() => setOpen(!open)}
-              className="text-5xl absolute right-6 top-8 cursor-pointer lg:hidden text-white"
+              className="text-5xl absolute right-0 top-8 cursor-pointer lg:hidden text-white"
             >
               {open ? <RxCross2 /> : <IoMenuOutline />}
             </div>
