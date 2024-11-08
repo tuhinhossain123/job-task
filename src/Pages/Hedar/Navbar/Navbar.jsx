@@ -8,9 +8,9 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full bg-[#BD1F17]">
+    <div className="w-full fixed z-10 bg-opacity-30">
       <div className="max-w-[1320px] mx-auto">
-        <div className="px-6 lg:px-8 py-8 flex justify-between items-center relative">
+        <div className="px-6 lg:px-0 py-8 flex justify-between items-center relative">
           <div className="">
             <div className="flex items-center lg:gap-[60px]">
               {/* logo and title here */}
