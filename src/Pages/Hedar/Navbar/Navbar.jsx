@@ -8,7 +8,7 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full fixed z-10 bg-opacity-30">
+    <div className="w-full fixed z-10 bg-opacity-30 px-6">
       <div className="max-w-[1320px] mx-auto">
         <div className="px-6 lg:px-0 py-8 flex justify-between items-center relative">
           <div className="">
@@ -20,9 +20,9 @@ const Navbar = () => {
                     <img src={img} alt="" className="w-9" />
                   </div>
                   <div>
-                    <h2 className="text-[28px] text-white">
+                    <h2 className="text-[28px] text-white font-poppins">
                       <span className="font-bold">Restau</span>
-                      <span className="font-semibold">rant</span>
+                      <span className="font-medium">rant</span>
                     </h2>
                   </div>
                 </Link>
@@ -31,22 +31,22 @@ const Navbar = () => {
               {/* navlink here here */}
               <div className="hidden lg:block">
                 <div className="flex items-center gap-10 ">
-                  <Link className="text-[15px] font-medium text-white">
+                  <Link className="text-[15px] font-releway font-medium text-white">
                     Home
                   </Link>
-                  <Link className="text-[15px] font-medium text-white">
+                  <Link className="text-[15px] font-releway  font-medium text-white">
                     About
                   </Link>
-                  <Link className="text-[15px] font-medium text-white">
+                  <Link className="text-[15px] font-releway  font-medium text-white">
                     Portfolio
                   </Link>
-                  <Link className="text-[15px] font-medium text-white">
+                  <Link className="text-[15px] font-releway  font-medium text-white">
                     Clients
                   </Link>
-                  <Link className="text-[15px] font-medium text-white">
+                  <Link className="text-[15px] font-releway  font-medium text-white">
                     Blog
                   </Link>
-                  <Link className="text-[15px] font-medium text-white">
+                  <Link className="text-[15px] font-releway  font-medium text-white">
                     Contact
                   </Link>
                 </div>
@@ -71,29 +71,29 @@ const Navbar = () => {
               {/* small device navlink here */}
               <div className="lg:hidden md:block">
                 <div className="flex flex-col items-center gap-5 md:gap-8">
-                  <Link className="text-xl lg:text-[15px] font-medium text-white">
+                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
                     Home
                   </Link>
-                  <Link className="text-xl lg:text-[15px] font-medium text-white">
+                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
                     About
                   </Link>
-                  <Link className="text-xl lg:text-[15px] font-medium text-white">
+                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
                     Portfolio
                   </Link>
-                  <Link className="text-xl lg:text-[15px] font-medium text-white">
+                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
                     Clients
                   </Link>
-                  <Link className="text-xl lg:text-[15px] font-medium text-white">
+                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
                     Blog
                   </Link>
-                  <Link className="text-xl lg:text-[15px] font-medium text-white">
+                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
                     Contact
                   </Link>
                 </div>
               </div>
               {/* book a table button here */}
               <div className="mt-10 lg:mt-0">
-                <button className="bg-[#FEBF00] px-6 py-[10px] text-black text-[16px] font-bold ">
+                <button className="bg-[#FEBF00] px-6 py-[10px] text-black text-[16px] font-robotto font-bold ">
                   Book a table
                 </button>
               </div>

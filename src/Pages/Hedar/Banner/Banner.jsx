@@ -1,11 +1,11 @@
 import bannerBg from "../../../assets/images/bg-img.png";
 import img1 from "../../../assets/images/image 1.png";
-import img2 from "../../../assets/images/Offer (2).png"
-import img3 from "../../../assets/images/Vector.png"
+import img2 from "../../../assets/images/Offer (2).png";
+import img3 from "../../../assets/images/Vector.png";
 const Banner = () => {
   return (
     <div
-      className="w-full pt-[130px] lg:pt-[260px] pb-8 lg:pb-[160px] bg-[#BD1F17]"
+      className="w-full pt-[130px] lg:pt-[260px] pb-8 lg:pb-[160px] bg-[#BD1F17] px-6"
       style={{
         backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(${bannerBg})`,
         backgroundRepeat: "no-repeat",
@@ -16,13 +16,13 @@ const Banner = () => {
       <div className="max-w-[1320px] mx-auto px-[30px]">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 relative">
           <div>
-            <h2 className="text-5xl lg:text-[100px] hidden lg:block  font-bold text-white leading-[1] lg:absolute lg:top-28 lg:bg-gradient-to-r from-[#BD1F17]/10 to-[#BD1F15]/80 p-4">
+            <h2 className="text-5xl lg:text-[120px] font-bebas font-medium hidden lg:block  text-white leading-[1.1] lg:absolute lg:top-28 lg:bg-gradient-to-r from-[#BD1F17]/10 to-[#BD1F15]/80 pt-5 pr-5 pb-3">
               Taste the authentic <br /> Saudi cuisine
             </h2>
             <h2 className="block lg:hidden text-5xl font-bold text-white">
               Taste the authentic Saudi cuisine
             </h2>
-            <div className="pt-4 lg:pt-[12rem]">
+            <div className="pt-4 lg:pt-[20rem]">
               <p className="font-normal text-white text-base">
                 Among the best Saudi chefs in the world, serving you something
                 beyond flavor.{" "}
@@ -35,10 +35,23 @@ const Banner = () => {
             </div>
           </div>
           <div>
-            <div className="lg:w-[700px] ">
-              <img src={img1} alt="" />
+            <div className="">
+              <img
+                src={img1}
+                alt=""
+                className="lg:w-[700px] h-[310px] lg:h-[649px] z-30"
+              />
               <div>
-                <img src={img2} alt="" className="bg-[#FEBF00] rounded-full"/>
+                <img
+                  src={img2}
+                  alt=""
+                  className=" absolute right-2 lg:left-[96%] bottom-0  lg:top-[86%] w-[105px] h-[105x]"
+                />
+                <img
+                  src={img3}
+                  alt=""
+                  className=" absolute left-[85%] lg:left-[99%] bottom-[45%] lg:bottom-[98%] w-[45px] h-[45px]"
+                />
               </div>
             </div>
           </div>
