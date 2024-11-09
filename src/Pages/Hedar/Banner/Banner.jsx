@@ -14,12 +14,12 @@ const Banner = () => {
       }}
     >
       <div className="max-w-[1320px] mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 relative">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16 relative">
           <div>
             <h2 className="text-5xl lg:text-[120px] font-bebas font-medium hidden lg:block  text-white leading-[1.1] lg:absolute lg:top-28 lg:bg-gradient-to-r from-[#BD1F17]/10 to-[#BD1F15]/80 pt-5 pr-5 pb-3">
               Taste the authentic <br /> Saudi cuisine
             </h2>
-            <h2 className="block lg:hidden text-5xl font-bold text-white">
+            <h2 className="block lg:hidden text-5xl font-bebas  font-medium text-white">
               Taste the authentic Saudi cuisine
             </h2>
             <div className="pt-4 lg:pt-[20rem]">
@@ -39,18 +39,18 @@ const Banner = () => {
               <img
                 src={img1}
                 alt=""
-                className=" md:w-[700px] h-[310px] md:h-[649px] z-30"
+                className="w-full lg:w-[700px] h-full lg::h-[649px] z-30"
               />
               <div>
                 <img
                   src={img2}
                   alt=""
-                  className=" absolute right-2 lg:left-[96%] bottom-4  lg:top-[86%] w-[105px] lg:h-[105x]"
+                  className=" absolute right-2 lg:left-[96%] bottom-4  lg:top-[84%] w-[105px] lg:h-[105x]"
                 />
                 <img
                   src={img3}
                   alt=""
-                  className=" absolute left-[85%] lg:left-[99%] bottom-[45%] lg:bottom-[98%] w-[45px] h-[45px]"
+                  className=" absolute left-[90%] lg:left-[99%] bottom-[47%] lg:bottom-[98%] w-[45px] h-[45px]"
                 />
               </div>
             </div>
