@@ -29,7 +29,7 @@ const Banner = () => {
               </p>
               <div className="mt-8 lg:mt-[38px]">
                 <button className="bg-[#FEBF00] px-5 lg:px-6 py-[13px] lg:py-4 text-black text-lg font-bold ">
-                  Book a table
+                Explore Menu
                 </button>
               </div>
             </div>
