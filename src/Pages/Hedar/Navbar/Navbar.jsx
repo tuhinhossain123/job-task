@@ -2,18 +2,32 @@ import { IoMenuOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import img from "../../../assets/images/Frame.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 200); 
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="w-full fixed z-10 bg-opacity-30 px-6">
+    <div
+      className={`w-full fixed z-10 px-6 transition-colors duration-300 ${
+        scrolled ? "bg-[#BD1F17]" : "bg-opacity-30"
+      }`}
+    >
       <div className="max-w-[1320px] mx-auto">
-        <div className=" py-8 flex justify-between items-center relative">
+        <div className="py-8 flex justify-between items-center relative">
           <div className="">
             <div className="flex items-center lg:gap-[60px]">
-              {/* logo and title here */}
+              {/* logo and title */}
               <div>
                 <Link to="/" className="flex items-center gap-[6px]">
                   <div>
@@ -28,31 +42,20 @@ const Navbar = () => {
                 </Link>
               </div>
 
-              {/* navlink here here */}
+              {/* Nav links for large screens */}
               <div className="hidden lg:block">
                 <div className="flex items-center gap-10 ">
-                  <Link className="text-[15px] font-releway font-medium text-white">
-                    Home
-                  </Link>
-                  <Link className="text-[15px] font-releway  font-medium text-white">
-                    About
-                  </Link>
-                  <Link className="text-[15px] font-releway  font-medium text-white">
-                    Portfolio
-                  </Link>
-                  <Link className="text-[15px] font-releway  font-medium text-white">
-                    Clients
-                  </Link>
-                  <Link className="text-[15px] font-releway  font-medium text-white">
-                    Blog
-                  </Link>
-                  <Link className="text-[15px] font-releway  font-medium text-white">
-                    Contact
-                  </Link>
+                  <Link className="text-[15px] font-releway font-medium text-white">Home</Link>
+                  <Link className="text-[15px] font-releway font-medium text-white">About</Link>
+                  <Link className="text-[15px] font-releway font-medium text-white">Portfolio</Link>
+                  <Link className="text-[15px] font-releway font-medium text-white">Clients</Link>
+                  <Link className="text-[15px] font-releway font-medium text-white">Blog</Link>
+                  <Link className="text-[15px] font-releway font-medium text-white">Contact</Link>
                 </div>
               </div>
             </div>
 
+            {/* Menu button for mobile */}
             <div
               onClick={() => setOpen(!open)}
               className="text-5xl absolute right-0 top-8 cursor-pointer lg:hidden text-white"
@@ -60,40 +63,29 @@ const Navbar = () => {
               {open ? <RxCross2 /> : <IoMenuOutline />}
             </div>
           </div>
+
+          {/* Mobile Menu */}
           <div
             className={`lg:flex lg:items-center lg:gap-8 absolute lg:static left-0 w-full lg:w-auto z-50 bg-[#4a4a4a] lg:bg-transparent transition-all duration-500 ease-in ${
-              open
-                ? "top-24 opacity-100"
-                : "top-[-400px] opacity-0 lg:opacity-100"
+              open ? "top-24 opacity-100" : "top-[-400px] opacity-0 lg:opacity-100"
             }`}
           >
             <div className="lg:flex items-center lg:gap-8 text-white text-center py-10 lg:py-0">
-              {/* small device navlink here */}
+              {/* Mobile nav links */}
               <div className="lg:hidden md:block">
                 <div className="flex flex-col items-center gap-5 md:gap-8">
-                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
-                    Home
-                  </Link>
-                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
-                    About
-                  </Link>
-                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
-                    Portfolio
-                  </Link>
-                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
-                    Clients
-                  </Link>
-                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
-                    Blog
-                  </Link>
-                  <Link className="text-xl lg:text-[15px] font-releway  font-medium text-white">
-                    Contact
-                  </Link>
+                  <Link className="text-xl lg:text-[15px] font-releway font-medium text-white">Home</Link>
+                  <Link className="text-xl lg:text-[15px] font-releway font-medium text-white">About</Link>
+                  <Link className="text-xl lg:text-[15px] font-releway font-medium text-white">Portfolio</Link>
+                  <Link className="text-xl lg:text-[15px] font-releway font-medium text-white">Clients</Link>
+                  <Link className="text-xl lg:text-[15px] font-releway font-medium text-white">Blog</Link>
+                  <Link className="text-xl lg:text-[15px] font-releway font-medium text-white">Contact</Link>
                 </div>
               </div>
-              {/* book a table button here */}
+
+              {/* Book a table button */}
               <div className="mt-10 lg:mt-0">
-                <button className="bg-secondury px-6 py-[10px] text-black text-[16px] font-robotto font-bold ">
+                <button className="bg-secondury px-6 py-[10px] text-black text-[16px] font-robotto font-bold">
                   Book a table
                 </button>
               </div>
