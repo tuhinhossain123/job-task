@@ -6,7 +6,7 @@ import AboutServices from "../AboutServices/AboutServices";
 const AboutSection = () => {
   return (
     <div className="w-full my-8 lg:my-[120px] px-6 relative">
-      <div className="max-w-[1320px] mx-auto ">
+      <div className="max-w-[1320px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
           <div>
             <img
