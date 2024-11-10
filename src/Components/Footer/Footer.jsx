@@ -1,4 +1,13 @@
 import footer from "../../assets/images/Footer.png";
+import { MdOutlineWatchLater } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
+import { CiLocationOn } from "react-icons/ci";
+import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div
@@ -17,7 +26,9 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
           <div className="">
-            <h2 className="w-[30px] h-[30px] mx-auto text-secondury">hi</h2>
+            <h2>
+              <MdOutlineWatchLater className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></MdOutlineWatchLater>
+            </h2>
             <h3 className="text-2xl text-white text-center font-bebas font-bold pt-4 lg:pt-6">
               Opening hours
             </h3>
@@ -28,7 +39,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <h2 className="w-[30px] h-[30px] mx-auto text-secondury">hi</h2>
+            <h2>
+              <FiPhoneCall className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></FiPhoneCall>
+            </h2>
             <h3 className="text-2xl text-white text-center  font-bebas font-bold pt-4 lg:pt-6">
               LET'S TALK
             </h3>
@@ -37,7 +50,9 @@ const Footer = () => {
             </h4>
           </div>
           <div className="">
-            <h2 className="w-[30px] h-[30px] mx-auto text-secondury">hi</h2>
+            <h2>
+              <AiOutlineMail className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></AiOutlineMail>
+            </h2>
             <h3 className="text-2xl text-white text-center font-bebas font-bold pt-4 lg:pt-6">
               BOOK A TABLE
             </h3>
@@ -46,7 +61,9 @@ const Footer = () => {
             </h4>
           </div>
           <div className="">
-            <h2 className="w-[30px] h-[30px] mx-auto text-secondury">hi</h2>
+            <h2>
+              <CiLocationOn className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></CiLocationOn>
+            </h2>
             <h3 className="text-2xl text-center text-white font-bebas font-bold pt-4 lg:pt-6">
               Our Address
             </h3>
@@ -56,18 +73,26 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-[18px] lg:gap-6 pt-[60px] lg:pt-[120px]">
-          <div>
-            <h2 className="w-6 h-6 border rounded-full">hi</h2>
+        <div className="flex justify-center items-center gap-[18px] lg:gap-6 pt-[60px] lg:pt-[120px]">
+          <div className="border hover:border-primary rounded-full p-[14px] hover:-translate-y-1 duration-300">
+            <Link className="">
+              <FaFacebook className="text-white hover:text-primary text-2xl"></FaFacebook>
+            </Link>
           </div>
-          <div>
-            <h2 className="w-6 h-6 border rounded-full">hi</h2>
+          <div className="border hover:border-primary rounded-full p-[14px] hover:-translate-y-1 duration-300">
+            <Link className="">
+              <FaSquareXTwitter className="text-white hover:text-primary text-2xl"></FaSquareXTwitter>
+            </Link>
           </div>
-          <div>
-            <h2 className="w-6 h-6 border rounded-full">hi</h2>
+          <div className="border hover:border-primary rounded-full p-[14px] hover:-translate-y-1 duration-300">
+            <Link className="">
+              <FaInstagramSquare className="text-white hover:text-primary text-2xl"></FaInstagramSquare>
+            </Link>
           </div>
-          <div>
-            <h2 className="w-6 h-6 border rounded-full">hi</h2>
+          <div className="border hover:border-primary rounded-full p-[14px] hover:-translate-y-1 duration-300">
+            <Link className="">
+              <FaLinkedin className="text-white hover:text-primary text-2xl"></FaLinkedin>
+            </Link>
           </div>
         </div>
         <h2 className="text-[16px] lg:text-[21px] text-white text-center font-robotto font-normal pt-4 lg:pt-6">
