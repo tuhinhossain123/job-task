@@ -1,15 +1,29 @@
-import { useForm } from "react-hook-form";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import img from "../../assets/images/from-bg.png";
 const FromSection = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const form = useRef();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_tznz5c9", "template_qci4tt6", form.current, {
+        publicKey: "oCGOoFBnlThyDZ0sR",
+      })
+      .then(
+        () => {
+          toast.success("From successfully submited !!");
+          e.target.reset();
+        },
+        (error) => {
+          toast.error("FAILED...", error.text);
+        }
+      );
   };
+
   return (
     <div
       className="w-full px-6"
@@ -36,84 +50,58 @@ const FromSection = () => {
           molestie vel, ornare non id blandit netus.
         </p>
         <div className="pt-[40px]">
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="w-full  lg:w-[50%]"
-          >
+          <form ref={form} onSubmit={sendEmail} className="w-full  lg:w-[50%]">
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-[30px]">
               <div className="form-control w-full">
                 <input
                   type="text"
-                  {...register("name", { required: true })}
+                  name="from_name"
                   className="input bg-transparent focus:bg-transparent border border-[#E5E7EB] w-full text-[14px] font-robotto font-normal px-4 py-3 text-white placeholder:text-white focus:outline-none"
                   placeholder="Your Name *"
                 />
-                {errors.name && (
-                  <span className="text-primary font-robotto  text-base">
-                    name is required
-                  </span>
-                )}
               </div>
               <div className="form-control w-full">
                 <input
                   type="email"
-                  {...register("email", { required: true })}
+                  name="from_email"
                   className="input bg-transparent border border-[#E5E7EB] w-full text-[14px] font-robotto font-normal px-4 py-3 text-white placeholder:text-white focus:outline-none"
                   placeholder="Your Email"
                 />
-                {errors.email && (
-                  <span className="text-primary font-robotto text-base">
-                    email is required
-                  </span>
-                )}
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-[30px] pt-4 lg:pt-6">
               <div className="form-control w-full">
                 <input
                   type="date"
-                  {...register("date", { required: true })}
+                  name="date"
                   className="omput bg-transparent  border border-[#E5E7EB] w-full text-white placeholder:text-white text-[14px] font-roboto font-normal px-4 py-3 focus:outline-none"
                 />
-                 {errors.date && (
-                  <span className="text-primary font-robotto text-base">
-                    date is required
-                  </span>
-                )}
               </div>
               <div className="form-control w-full text-red-500">
                 <input
                   type="number"
-                  {...register("number", { required: true })}
+                  name="number"
                   className="input bg-transparent border border-[#E5E7EB] w-full text-[14px] font-robotto font-normal px-4 py-3 text-white placeholder:text-white focus:outline-none"
                   placeholder="Total People"
                 />
-                  {errors.number && (
-                  <span className="text-primary font-robotto text-base">
-                    number is required
-                  </span>
-                )}
               </div>
             </div>
             <div className="pt-4 lg:pt-6">
               <textarea
+                type="text"
+                name="message"
                 id=""
                 cols="7"
                 rows="7"
-                {...register("message", { required: true })}
                 placeholder="Message"
                 className="bg-transparent focus:bg-transparent border border-[#E5E7EB] w-full text-white placeholder:text-white text-[14px] font-roboto font-normal px-4 py-3 focus:outline-none"
               ></textarea>
-               {errors.message && (
-                  <span className="text-primary font-medium">
-                    message is required
-                  </span>
-                )}
             </div>
             <div className="pt-6 lg:pt-8">
               <button className="bg-secondury hover:bg-primary hover:text-white px-[20px] lg:px-6 py-3 lg:py-4 text-black text-base lg:text-lg font-bold ">
                 Book Now
               </button>
+              <ToastContainer></ToastContainer>
             </div>
           </form>
         </div>
