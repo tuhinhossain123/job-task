@@ -51,76 +51,50 @@ const AbouSectionTab = () => {
                 consectetur adipiscing elit do eiusmod tempor incididunt ut
                 labore et dolore magna minim veniam nostrud exercitation.
               </p>
-              <div className="flex items-center gap-4 lg:gap-8 pt-8">
-                <button className="bg-secondury px-4 lg:px-6 py-3 lg:py-4 text-black text-sm lg:text-lg font-bold ">
-                  Explore Menu
-                </button>
-                <h2 className="flex items-center gap-2">
-                  <span>
-                    <FiPhoneCall className="w-6 h-6 text-primary"></FiPhoneCall>
-                  </span>
-                  <span className="text-lg font-robotto font-bold text-[#0A1425]">
-                    +88 3426 739 485
-                  </span>
-                </h2>
-              </div>
             </div>
           )}
           {activeTab === 1 && (
             <div>
               <h1 className="text-[#181818] font-bebas font-bold text-[40px] lg:text-[60px] leading-[1.2]">
-                Exceptional culinary <br /> experience and delicious food
+                We ready to have you the best dining experiences
               </h1>
               <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
-                non sed est cursus. Vel hac convallis ipsum, facilisi odio
-                pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
-                consectetur adipiscing elit do eiusmod tempor incididunt ut
-                labore et dolore magna minim veniam nostrud exercitation.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                unde. Eveniet, maxime optio pariatur, facere illo quis labore
+                cum ex nihil fuga sed necessitatibus. Sequi architecto
+                laboriosam cupiditate aliquam, numquam, nesciunt maxime, error
+                quaerat magni nostrum quos enim tempora temporibus quas vel iure
               </p>
-              <div className="flex items-center gap-4 lg:gap-8 pt-8">
-                <button className="bg-secondury px-4 lg:px-6 py-3 lg:py-4 text-black text-sm lg:text-lg font-bold ">
-                  Explore Menu
-                </button>
-                <h2 className="flex items-center gap-2">
-                  <span>
-                    <FiPhoneCall className="w-6 h-6 text-primary"></FiPhoneCall>
-                  </span>
-                  <span className="text-lg font-robotto font-bold text-[#0A1425]">
-                    +88 3426 739 485
-                  </span>
-                </h2>
-              </div>
             </div>
           )}
           {activeTab === 2 && (
             <div>
               <h1 className="text-[#181818] font-bebas font-bold text-[40px] lg:text-[60px] leading-[1.2]">
-                Exceptional culinary <br /> experience and delicious food
+                Taste the authentic <br /> Saudi cuisine Taste the authent
               </h1>
               <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
-                non sed est cursus. Vel hac convallis ipsum, facilisi odio
-                pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
-                consectetur adipiscing elit do eiusmod tempor incididunt ut
-                labore et dolore magna minim veniam nostrud exercitation.
+                Among the best Saudi chefs in the world, serving you something
+                beyond flavor. Among the best Saudi chefs in the world, serving
+                you something beyond flavor. Among the best Saudi chefs in the
+                world, serving you something beyond flavor. Among the best Saudi
+                chefs in the world, serving you something beyond flavor.
               </p>
-              <div className="flex items-center gap-4 lg:gap-8 pt-8">
-                <button className="bg-secondury px-4 lg:px-6 py-3 lg:py-4 text-black text-sm lg:text-lg font-bold ">
-                  Explore Menu
-                </button>
-                <h2 className="flex items-center gap-2">
-                  <span>
-                    <FiPhoneCall className="w-6 h-6 text-primary"></FiPhoneCall>
-                  </span>
-                  <span className="text-lg font-robotto font-bold text-[#0A1425]">
-                    +88 3426 739 485
-                  </span>
-                </h2>
-              </div>
             </div>
           )}
         </div>
+      </div>
+      <div className="flex items-center gap-4 lg:gap-8 pt-8">
+        <button className="bg-secondury hover:bg-primary hover:text-white px-4 lg:px-6 py-3 lg:py-4 text-black text-sm lg:text-lg font-bold ">
+          Explore Menu
+        </button>
+        <h2 className="flex items-center gap-2">
+          <span>
+            <FiPhoneCall className="w-6 h-6 text-primary"></FiPhoneCall>
+          </span>
+          <span className="text-lg font-robotto font-bold text-[#0A1425]">
+            +88 3426 739 485
+          </span>
+        </h2>
       </div>
     </div>
   );
