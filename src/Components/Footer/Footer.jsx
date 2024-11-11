@@ -20,7 +20,7 @@ const Footer = () => {
       }}
     >
       <div className="max-w-[1320px] mx-auto z-30">
-        <h2 className="text-center text-[40px] text-white lg:text-[62px] font-bebas font-bold ">
+        <h2 className="text-center text-[40px] text-white lg:text-[62px] font-bebas font-medium">
           We ready to have you the best dining experiences
         </h2>
 
@@ -29,7 +29,7 @@ const Footer = () => {
             <h2>
               <MdOutlineWatchLater className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></MdOutlineWatchLater>
             </h2>
-            <h3 className="text-2xl text-white text-center font-bebas font-bold pt-4 lg:pt-6">
+            <h3 className="text-2xl text-white text-center font-bebas font-medium pt-4 lg:pt-6">
               Opening hours
             </h3>
             <div>
@@ -42,7 +42,7 @@ const Footer = () => {
             <h2>
               <FiPhoneCall className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></FiPhoneCall>
             </h2>
-            <h3 className="text-2xl text-white text-center  font-bebas font-bold pt-4 lg:pt-6">
+            <h3 className="text-2xl text-white text-center  font-bebas font-medium pt-4 lg:pt-6">
               LET'S TALK
             </h3>
             <h4 className="pt-3 text-[16px] text-white text-center  font-robotto font-normal leading-[1.7]">
@@ -53,7 +53,7 @@ const Footer = () => {
             <h2>
               <AiOutlineMail className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></AiOutlineMail>
             </h2>
-            <h3 className="text-2xl text-white text-center font-bebas font-bold pt-4 lg:pt-6">
+            <h3 className="text-2xl text-white text-center font-bebas font-medium pt-4 lg:pt-6">
               BOOK A TABLE
             </h3>
             <h4 className="pt-3 text-[16px] text-white text-center  font-robotto font-normal leading-[1.7]">
@@ -64,7 +64,7 @@ const Footer = () => {
             <h2>
               <CiLocationOn className="w-[30px] h-[30px] mx-auto text-secondury hover:text-primary"></CiLocationOn>
             </h2>
-            <h3 className="text-2xl text-center text-white font-bebas font-bold pt-4 lg:pt-6">
+            <h3 className="text-2xl text-center text-white font-bebas font-medium pt-4 lg:pt-6">
               Our Address
             </h3>
             <h4 className="pt-3 text-[16px] text-white text-center  font-robotto font-normal">

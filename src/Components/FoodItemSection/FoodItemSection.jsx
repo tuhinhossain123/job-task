@@ -3,7 +3,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import img1 from "../../assets/images/hr.png";
-import img2 from "../../assets/images/burger.png";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./FoodItemSection.css";
