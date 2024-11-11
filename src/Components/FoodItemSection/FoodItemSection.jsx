@@ -47,7 +47,7 @@ const FoodItemSection = () => {
                   Crispy, Every Bite Taste
                 </h2>
               </div>
-              <h2 className="text-[40px] md:text-[62px] font-bebas font-medium text-[#181818] pt-4 pb-[30px] lg:pb-[60px]">
+              <h2 className="text-[40px] md:text-[62px] font-bebas font-medium text-[#181818] pt-4">
                 POPULAR FOOD ITEMS
               </h2>
             </div>
@@ -78,7 +78,7 @@ const FoodItemSection = () => {
           >
             {items.concat(items).map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white p-8 mt-[30px] lg:mt-[50px] text-center">
+                <div className="bg-white p-8 mt-[30px] lg:mt-[60px] text-center">
                   <img
                     src={item.img}
                     alt={item.title}
@@ -106,7 +106,7 @@ const FoodItemSection = () => {
         </div>
       </div>
       <div>
-        <img src={img1} alt="" className="absolute left-0 top-[35%] hidden lg:block" />
+        <img src={img1} alt="" className="absolute left-0 top-[30%] hidden lg:block" />
       </div>
     </div>
   );

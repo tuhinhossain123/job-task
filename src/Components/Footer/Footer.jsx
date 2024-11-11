@@ -11,7 +11,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div
-      className="w-full mt-8 lg:mt-[120px] py-[30px] lg:py-[120px] px-6"
+      className="w-full py-[30px] lg:py-[120px] px-6"
       style={{
         backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(${footer})`,
         backgroundRepeat: "no-repeat",
