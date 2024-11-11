@@ -10,7 +10,7 @@ const AboutServices = () => {
             <img src={img1} alt="" />
           </div>
           <div>
-            <h3 className="text-[0A1425] text-2xl lg:text-[30px] font-bebas font-semibold">
+            <h3 className="text-[0A1425] text-2xl lg:text-[30px] font-bebas font-medium">
               fast delivery
             </h3>
             <h4 className="text-[0A1425] text-[20px] font-robotto font-normal">
@@ -23,7 +23,7 @@ const AboutServices = () => {
             <img src={img2} alt="" />
           </div>
           <div>
-            <h3 className="text-[0A1425] text-2xl lg:text-[30px] font-bebas font-semibold">
+            <h3 className="text-[0A1425] text-2xl lg:text-[30px] font-bebas font-medium">
               absolute dining
             </h3>
             <h4 className="text-[0A1425] text-[20px] font-robotto font-normal">
@@ -36,7 +36,7 @@ const AboutServices = () => {
             <img src={img3} alt="" />
           </div>
           <div>
-            <h3 className="text-[0A1425] text-2xl lg:text-[30px] font-bebas font-semibold">
+            <h3 className="text-[0A1425] text-2xl lg:text-[30px] font-bebas font-medium">
               pickup delivery
             </h3>
             <h4 className="text-[0A1425] text-[20px] font-robotto font-normal">

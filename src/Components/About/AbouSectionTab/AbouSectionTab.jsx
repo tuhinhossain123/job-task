@@ -41,7 +41,7 @@ const AbouSectionTab = () => {
         <div className="pt-8">
           {activeTab === 0 && (
             <div>
-              <h1 className="text-[#181818] font-bebas font-bold text-[40px] lg:text-[60px] leading-[1.2]">
+              <h1 className="text-[#181818] font-bebas font-semibold text-[40px] lg:text-[60px] leading-[1.2]">
                 Exceptional culinary <br /> experience and delicious food
               </h1>
               <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
@@ -55,7 +55,7 @@ const AbouSectionTab = () => {
           )}
           {activeTab === 1 && (
             <div>
-              <h1 className="text-[#181818] font-bebas font-bold text-[40px] lg:text-[60px] leading-[1.2]">
+              <h1 className="text-[#181818] font-bebas font-semibold text-[40px] lg:text-[60px] leading-[1.2]">
                 We ready to have you the best dining experiences
               </h1>
               <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
@@ -69,7 +69,7 @@ const AbouSectionTab = () => {
           )}
           {activeTab === 2 && (
             <div>
-              <h1 className="text-[#181818] font-bebas font-bold text-[40px] lg:text-[60px] leading-[1.2]">
+              <h1 className="text-[#181818] font-bebas font-semibold text-[40px] lg:text-[60px] leading-[1.2]">
                 Taste the authentic <br /> Saudi cuisine Taste the authent
               </h1>
               <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">

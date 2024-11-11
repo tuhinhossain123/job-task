@@ -48,7 +48,7 @@ const FoodItemSection = () => {
                   Crispy, Every Bite Taste
                 </h2>
               </div>
-              <h2 className="text-[40px] md:text-[62px] font-bebas font-semibold text-[#181818] pt-4 pb-[30px] lg:pb-[60px]">
+              <h2 className="text-[40px] md:text-[62px] font-bebas font-medium text-[#181818] pt-4 pb-[30px] lg:pb-[60px]">
                 POPULAR FOOD ITEMS
               </h2>
             </div>
@@ -86,7 +86,7 @@ const FoodItemSection = () => {
                     className="mx-auto mb-4 w-[186px] h-[124px]"
                   />
                   <h2 className="my-6 border-2 border-red-500 w-[57px]  mx-auto"></h2>
-                  <h3 className="text-2xl text-[#0A1425] font-bebas font-bold">
+                  <h3 className="text-2xl text-[#0A1425] font-bebas font-medium">
                     {item.title}
                   </h3>
                   <p className="text-[16px] text-[#0A1425] font-robotto font-normal">

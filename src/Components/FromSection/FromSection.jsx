@@ -13,11 +13,11 @@ const FromSection = () => {
       <div className="max-w-[1320px] mx-auto py-[30px] lg:py-[120px]">
         <div className="flex items-center gap-[10px]">
           <h1 className="w-[10px] h-[10px] bg-primary"></h1>
-          <h2 className="text-primary font-robotto font-bold text-lg md:text-[20px]">
+          <h2 className="text-primary font-robotto font-semibold text-lg md:text-[20px]">
             Book Now
           </h2>
         </div>
-        <h2 className="text-[40px] md:text-[62px] font-bebas font-semibold text-white pt-4">
+        <h2 className="text-[40px] md:text-[62px] font-bebas font-medium text-white pt-4">
           Book Your Table
         </h2>
         <p className="pt-4 text-[16px] font-robotto font-normal text-white">
@@ -25,6 +25,60 @@ const FromSection = () => {
           <br />
           molestie vel, ornare non id blandit netus.
         </p>
+        <div className="pt-[40px]">
+          <form className="w-full  lg:w-[50%]">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-[30px]">
+              <div className="form-control w-full bg-none">
+                <input
+                  type="text"
+                  name="firstName"
+                  className="input bg-transparent border border-[#E5E7EB] w-full text-[14px] font-robotto font-normal px-4 py-3 text-white placeholder:text-white focus:outline-none"
+                  placeholder="Your Name *"
+                />
+              </div>
+              <div className="form-control w-full bg-none">
+                <input
+                  type="text"
+                  name="firstName"
+                  className="input bg-transparent border border-[#E5E7EB] w-full text-[14px] font-robotto font-normal px-4 py-3 text-white placeholder:text-white focus:outline-none"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-[30px] pt-4 lg:pt-6">
+              <div className="form-control w-full bg-none">
+                <input
+                  type="date"
+                  name="firstName"
+                  className="omput bg-transparent  border border-[#E5E7EB] w-full text-white placeholder:text-white text-[14px] font-roboto font-normal px-4 py-3 focus:outline-none"
+                />
+              </div>
+              <div className="form-control w-full text-red-500">
+                <input
+                  type="number"
+                  name="firstName"
+                  className="input bg-transparent border border-[#E5E7EB] w-full text-[14px] font-robotto font-normal px-4 py-3 text-white placeholder:text-white focus:outline-none"
+                  placeholder="Total People"
+                />
+              </div>
+            </div>
+            <div className="pt-4 lg:pt-6">
+              <textarea
+                id=""
+                cols="7"
+                rows="7"
+                name="comment"
+                placeholder="Message"
+                className="bg-transparent focus:bg-transparent border border-[#E5E7EB] w-full text-white placeholder:text-white text-[14px] font-roboto font-normal px-4 py-3 focus:outline-none"
+              ></textarea>
+            </div>
+            <div className="pt-6 lg:pt-8">
+              <button className="bg-secondury hover:bg-primary hover:text-white px-[20px] lg:px-6 py-3 lg:py-4 text-black text-base lg:text-lg font-bold ">
+                Book Now
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
