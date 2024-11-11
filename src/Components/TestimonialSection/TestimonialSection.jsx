@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
-import img1 from "../../assets/images/hr.png";
 import icon from "../../assets/images/“ (1).png";
 import video from "../../assets/images/Video.png";
 import img2 from "../../assets/images/Group.svg";
@@ -53,7 +52,7 @@ const TestimonialSection = () => {
             modules={[Autoplay, Navigation]}
             spaceBetween={0}
             slidesPerView={1}
-            autoplay={{ delay: 5000 }}
+            autoplay={{ delay: 7000 }}
             loop={true}
             navigation={{
               nextEl: ".slider-next",
@@ -100,7 +99,7 @@ const TestimonialSection = () => {
                   </div>
                   {/* ride side video section */}
                   <div className="w-full lg:w-[60%] relative">
-                    <img src={video} alt="" />
+                    <img src={video} alt="" className=""/>
                     <Link to="https://www.youtube.com/watch?v=CWONtDyT16E">
                       <div className="absolute top-[50%] left-[45%]">
                         <img src={play} alt="" />
