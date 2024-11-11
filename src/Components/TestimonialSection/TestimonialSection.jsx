@@ -22,6 +22,22 @@ const TestimonialSection = () => {
       description:
         "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
     },
+    {
+      id: 1,
+      img: "https://i.ibb.co.com/0tmwjQF/Image.png",
+      name: "Khalid Al Dawsry",
+      title: "Jeddah, Saudi",
+      description:
+        "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+    },
+    {
+      id: 1,
+      img: "https://i.ibb.co.com/0tmwjQF/Image.png",
+      name: "Khalid Al Dawsry",
+      title: "Jeddah, Saudi",
+      description:
+        "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+    },
   ];
   return (
     <div className="w-full py-8 lg:py-[120px] px-6  relative">
@@ -50,9 +66,9 @@ const TestimonialSection = () => {
           </div>
           <Swiper
             modules={[Autoplay, Navigation]}
-            spaceBetween={0}
+            // spaceBetween={0}
             slidesPerView={1}
-            // autoplay={{ delay: 7000 }}
+            // autoplay={{ delay: 5000 }}
             loop={false}
             navigation={{
               nextEl: ".slider-next",
@@ -71,7 +87,7 @@ const TestimonialSection = () => {
                         <img src={icon} alt="" className="" />
                       </div>
                     </div>
-                    <div className="pt-16 lg:pt-40">
+                    <div className="pt-16 lg:pt-24">
                       <div className="flex justify-between items-center">
                         <div>
                           <h2 className="text-lg font-bebas font-medium">
