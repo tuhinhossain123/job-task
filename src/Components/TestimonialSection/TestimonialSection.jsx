@@ -85,7 +85,10 @@ const TestimonialSection = () => {
                           <img src={item.img} alt={item.title} className="" />
                         </div>
                       </div>
-                      <h2 className="border border-black mt-4"></h2>
+                      <div className="mt-4 relative">
+                        <h2 className="border border-black "></h2>
+                        <h2 className=" border-4 border-primary w-12 absolute right-0 -top-1"></h2>
+                      </div>
                     </div>
 
                     {/* content side bg img */}
@@ -99,7 +102,7 @@ const TestimonialSection = () => {
                   </div>
                   {/* ride side video section */}
                   <div className="w-full lg:w-[60%] relative">
-                    <img src={video} alt="" className=""/>
+                    <img src={video} alt="" className="" />
                     <Link to="https://www.youtube.com/watch?v=CWONtDyT16E">
                       <div className="absolute top-[50%] left-[45%]">
                         <img src={play} alt="" />
