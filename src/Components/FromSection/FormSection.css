@@ -1,0 +1,18 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+}
+
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    color: white;
+}
+
+/* Target the number input arrows in WebKit browsers */
+input[type="number"]::-webkit-inner-spin-button {
+    filter: invert(1); /* Inverts the color to make the arrows white */
+}
+
+/* Optional: Target the outer spin button as well if needed */
+input[type="number"]::-webkit-outer-spin-button {
+    filter: invert(1); /* Makes the arrows white */
+}

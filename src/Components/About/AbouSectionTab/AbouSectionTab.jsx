@@ -3,6 +3,18 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const AbouSectionTab = () => {
   const [activeTab, setActiveTab] = useState(0);
+
+  const Callto = ({ phone, children }) => {
+    return (
+      <a
+        className="text-lg font-robotto font-bold text-[#0A1425] flex items-center gap-2"
+        href={`tel:${phone}`}
+      >
+        {children}
+      </a>
+    );
+  };
+
   return (
     <div>
       <div className="">
@@ -88,12 +100,10 @@ const AbouSectionTab = () => {
           Explore Menu
         </button>
         <h2 className="flex items-center gap-2">
-          <span>
-            <FiPhoneCall className="w-6 h-6 text-primary"></FiPhoneCall>
-          </span>
-          <span className="text-lg font-robotto font-bold text-[#0A1425]">
-            +88 3426 739 485
-          </span>
+          <Callto phone="+302101234567">
+            <FiPhoneCall className="w-6 h-6 text-primary"></FiPhoneCall>{" "}
+            <span>+88 3426 739 485</span>
+          </Callto>
         </h2>
       </div>
     </div>

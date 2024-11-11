@@ -3,15 +3,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import icon from "../../assets/images/“ (1).png";
-import video from "../../assets/images/Video.png";
 import img2 from "../../assets/images/Group.svg";
-import play from "../../assets/images/Play.png";
 import img3 from "../../assets/images/221.png";
 import img4 from "../../assets/images/12.png";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./TestimonialSection.css";
-import { Link } from "react-router-dom";
+import ReactPlayer from 'react-player'
+import playIcon from "../../assets/images/video-thumbnail.png"
+
 const TestimonialSection = () => {
   const items = [
     {
@@ -52,8 +52,8 @@ const TestimonialSection = () => {
             modules={[Autoplay, Navigation]}
             spaceBetween={0}
             slidesPerView={1}
-            autoplay={{ delay: 7000 }}
-            loop={true}
+            // autoplay={{ delay: 7000 }}
+            loop={false}
             navigation={{
               nextEl: ".slider-next",
               prevEl: ".slider-prev",
@@ -102,12 +102,17 @@ const TestimonialSection = () => {
                   </div>
                   {/* ride side video section */}
                   <div className="w-full lg:w-[60%] relative">
-                    <img src={video} alt="" className="" />
-                    <Link to="https://www.youtube.com/watch?v=CWONtDyT16E">
-                      <div className="absolute top-[50%] left-[45%]">
-                        <img src={play} alt="" />
-                      </div>
-                    </Link>
+                    {/* <img src={video} alt="" className="" /> */}
+                      <div className='player-wrapper'>
+                        <ReactPlayer
+                        light={<img src={playIcon} className="thumbnailOfVideo" alt='Thumbnail'  />}
+                        url='https://www.youtube.com/watch?v=CWONtDyT16E'
+                        className='react-player'
+                        playing
+                        width='100%'
+                        height='100%'
+                        />
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

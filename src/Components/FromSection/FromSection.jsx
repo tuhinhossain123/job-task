@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import img from "../../assets/images/from-bg.png";
+import "./FormSection.css"
 const FromSection = () => {
   const form = useRef();
 

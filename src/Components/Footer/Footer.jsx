@@ -9,6 +9,16 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
+
+    const Mailto = ({ email, subject = '', body = '', children }) => {
+        let params = subject || body ? '?' : '';
+        if (subject) params += `subject=${encodeURIComponent(subject)}`;
+        if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+      
+        return <a href={`mailto:${email}${params}`}>{children}</a>;
+      };
+
+
   return (
     <div
       className="w-full py-[30px] lg:py-[120px] px-6"
@@ -57,7 +67,11 @@ const Footer = () => {
               BOOK A TABLE
             </h3>
             <h4 className="pt-3 text-[16px] text-white text-center  font-robotto font-normal leading-[1.7]">
-              Email: demo@website.com <br /> Support: support@website.com
+              
+              <Mailto email="demo@website.com" subject="Hello & Welcome" body="Hello world!">
+              Email: demo@website.com
+  </Mailto>
+               <br /> Support: support@website.com
             </h4>
           </div>
           <div className="">
