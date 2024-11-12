@@ -5,6 +5,7 @@ import img3 from "../../../assets/images/Vector.png";
 const Banner = () => {
   return (
     <div
+      id="/"
       className="w-full pt-[130px] lg:pt-[260px] pb-8 lg:pb-[160px] bg-[#BD1F17] px-6"
       style={{
         backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(${bannerBg})`,

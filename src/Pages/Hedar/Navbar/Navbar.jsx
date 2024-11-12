@@ -2,9 +2,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import img from "../../../assets/images/Frame.png";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
-
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
@@ -32,8 +30,11 @@ const Navbar = () => {
               {/* logo and title */}
               <div>
                 <Link
-                  to="https://job-task-nu-two.vercel.app/"
-  
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={700}
                   className="flex items-center gap-[6px] pl-[24px] lg:pl-0"
                 >
                   <div>
@@ -51,7 +52,14 @@ const Navbar = () => {
               {/* Nav links for large screens */}
               <div className="hidden lg:block">
                 <div className="flex items-center gap-10 ">
-                  <Link className="text-[15px] font-releway font-medium text-white">
+                  <Link
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={700}
+                    className="text-[15px] font-releway font-medium text-white"
+                  >
                     Home
                   </Link>
                   <Link className="text-[15px] font-releway font-medium text-white">
