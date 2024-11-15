@@ -99,7 +99,7 @@ const FromSection = () => {
               ></textarea>
             </div>
             <div className="pt-6 lg:pt-8">
-              <button className="bg-secondury hover:bg-primary hover:text-white px-[20px] lg:px-6 py-3 lg:py-4 text-black text-base lg:text-lg font-bold ">
+              <button className="bg-secondury hover:bg-primary uppercase hover:text-white px-[20px] lg:px-6 py-3 lg:py-4 text-black text-base lg:text-lg font-bold ">
                 Book Now
               </button>
               <ToastContainer></ToastContainer>

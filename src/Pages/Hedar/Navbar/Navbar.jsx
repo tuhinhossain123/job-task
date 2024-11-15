@@ -24,7 +24,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-[1320px] mx-auto">
-        <div className="py-8 flex justify-between items-center relative">
+        <div className="py-[20px] lg:py-8 flex justify-between items-center relative">
           <div className="">
             <div className="flex items-center lg:gap-[60px]">
               {/* logo and title */}
@@ -84,7 +84,7 @@ const Navbar = () => {
             {/* Menu button for mobile */}
             <div
               onClick={() => setOpen(!open)}
-              className="text-5xl absolute right-[24px] top-7 cursor-pointer lg:hidden text-white"
+              className="text-4xl absolute right-[24px] top-[22px] lg:top-7 cursor-pointer lg:hidden text-white"
             >
               {open ? <RxCross2 /> : <IoMenuOutline />}
             </div>
