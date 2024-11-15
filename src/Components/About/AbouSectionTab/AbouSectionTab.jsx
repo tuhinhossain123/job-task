@@ -96,8 +96,8 @@ const AbouSectionTab = () => {
         </div>
       </div>
       <div className="flex items-center gap-4 lg:gap-8 pt-8">
-        <button className="bg-secondury hover:bg-primary hover:text-white px-4 lg:px-6 py-3 lg:py-4 text-black text-sm lg:text-lg font-bold ">
-          Explore Menu
+        <button className="bg-secondury hover:bg-primary uppercase hover:text-white px-4 lg:px-6 py-3 lg:py-4 text-black text-sm lg:text-lg font-bold ">
+          About More
         </button>
         <h2 className="flex items-center gap-2">
           <Callto phone="+302101234567">

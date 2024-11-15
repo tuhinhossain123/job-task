@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 200);
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,7 +24,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-[1320px] mx-auto">
-        <div className="py-[20px] flex justify-between items-center relative">
+        <div className="py-8 flex justify-between items-center relative">
           <div className="">
             <div className="flex items-center lg:gap-[60px]">
               {/* logo and title */}
@@ -84,7 +84,7 @@ const Navbar = () => {
             {/* Menu button for mobile */}
             <div
               onClick={() => setOpen(!open)}
-              className="text-5xl absolute right-[24px] top-[20px] cursor-pointer lg:hidden text-white"
+              className="text-5xl absolute right-[24px] top-7 cursor-pointer lg:hidden text-white"
             >
               {open ? <RxCross2 /> : <IoMenuOutline />}
             </div>
@@ -125,7 +125,7 @@ const Navbar = () => {
 
               {/* Book a table button */}
               <div className="mt-10 lg:mt-0">
-                <button className="bg-secondury px-6 py-[10px] text-black text-[16px] font-robotto font-bold">
+                <button className="bg-secondury px-6 py-[10px] text-black text-base font-robotto font-bold uppercase">
                   Book a table
                 </button>
               </div>
