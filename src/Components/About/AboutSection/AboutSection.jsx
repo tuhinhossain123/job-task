@@ -25,7 +25,7 @@ const AboutSection = () => {
         </div>
         <AboutServices></AboutServices>
       </div>
-      <div className="absolute right-0 bottom-[5%] hidden lg:block">
+      <div className="absolute right-0 bottom-[5%]  hidden lg:block -z-10">
         <img src={img2} alt="" />
       </div>
     </div>

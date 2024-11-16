@@ -56,7 +56,7 @@ const AbouSectionTab = () => {
               <h1 className="text-[#181818] font-bebas font-semibold text-[40px] lg:text-[60px] leading-[1.2]">
                 Exceptional culinary <br /> experience and delicious food
               </h1>
-              <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
+              <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify z-[2]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
                 non sed est cursus. Vel hac convallis ipsum, facilisi odio
                 pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
@@ -70,7 +70,7 @@ const AbouSectionTab = () => {
               <h1 className="text-[#181818] font-bebas font-semibold text-[40px] lg:text-[60px] leading-[1.2]">
                 We ready to have you the best dining experiences
               </h1>
-              <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
+              <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify z-[2]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
                 unde. Eveniet, maxime optio pariatur, facere illo quis labore
                 cum ex nihil fuga sed necessitatibus. Sequi architecto
@@ -80,11 +80,11 @@ const AbouSectionTab = () => {
             </div>
           )}
           {activeTab === 2 && (
-            <div>
+            <div >
               <h1 className="text-[#181818] font-bebas font-semibold text-[40px] lg:text-[60px] leading-[1.2]">
                 Taste the authentic <br /> Saudi cuisine Taste the authent
               </h1>
-              <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify">
+              <p className="pt-[18px] text-base font-robotto font-normal text-[333] text-justify ">
                 Among the best Saudi chefs in the world, serving you something
                 beyond flavor. Among the best Saudi chefs in the world, serving
                 you something beyond flavor. Among the best Saudi chefs in the

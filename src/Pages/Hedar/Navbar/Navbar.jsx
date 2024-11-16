@@ -124,7 +124,7 @@ const Navbar = () => {
               </div>
 
               {/* Book a table button */}
-              <div className="mt-10 lg:mt-0">
+              <div className="mt-10 lg:mt-0 ">
                 <button className="bg-secondury px-6 py-[10px] text-black text-base font-robotto font-bold uppercase">
                   Book a table
                 </button>
