@@ -78,7 +78,7 @@ const TestimonialSection = () => {
             {items.concat(items).map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="mt-[30px] lg:mt-[50px] text-center flex flex-col-reverse lg:flex-row">
-                  <div className="bg-[#FEBF00] p-6 lg:py-[19px] lg:px-16 w-full lg:w-[40%] ">
+                  <div className="bg-[#FEBF00] p-6 lg:py-[19px] lg:px-24 w-full lg:w-[556px]">
                     <div className="relative lg:pt-14">
                       <p className="text-[20px] font-robotto font-normal text-justify pt-2 pl-5">
                         {item.description}
@@ -87,7 +87,7 @@ const TestimonialSection = () => {
                         <img src={icon} alt="" className="" />
                       </div>
                     </div>
-                    <div className="pt-16 lg:pt-24">
+                    <div className="pt-16 lg:pt-[5.2rem]">
                       <div className="flex justify-between items-center">
                         <div>
                           <h2 className="text-lg font-bebas font-medium">
@@ -101,9 +101,9 @@ const TestimonialSection = () => {
                           <img src={item.img} alt={item.title} className="" />
                         </div>
                       </div>
-                      <div className="mt-4 relative">
+                      <div className="mt-[18px] relative">
                         <h2 className="border border-black "></h2>
-                        <h2 className=" border-4 border-primary w-12 absolute right-0 -top-1"></h2>
+                        <h2 className=" border-2 border-primary w-12 absolute right-0 -top-[0.2rem]"></h2>
                       </div>
                     </div>
 
@@ -117,7 +117,7 @@ const TestimonialSection = () => {
                     </div>
                   </div>
                   {/* ride side video section */}
-                  <div className="w-full lg:w-[60%] relative">
+                  <div className="w-full lg:w-[764px] relative">
                     {/* <img src={video} alt="" className="" /> */}
                       <div className='player-wrapper'>
                         <ReactPlayer
