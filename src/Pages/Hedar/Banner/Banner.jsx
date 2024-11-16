@@ -47,12 +47,12 @@ const Banner = () => {
                   <img
                     src={img2}
                     alt=""
-                    className=" absolute right-2 lg:left-[91%] bottom-3  lg:top-[84%] w-[105px] lg:h-[105x]"
+                    className=" absolute right-2 lg:left-[82%] xl:left-[91%] bottom-3  lg:top-[80%] xl:top-[84%]  w-[105px] lg:h-[105x]"
                   />
                   <img
                     src={img3}
                     alt=""
-                    className=" absolute left-[86%] lg:left-[97%] bottom-[92%] lg:bottom-[98%] w-[45px] h-[45px] z-[-1]"
+                    className=" absolute left-[86%] lg:left-[95%] xl:left-[97%] bottom-[92%] lg:bottom-[98%] w-[45px] h-[45px] z-[-1]"
                   />
                 </div>
               </div>
